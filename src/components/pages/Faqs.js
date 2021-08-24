@@ -18,8 +18,10 @@ function Faqs() {
                     <meta charSet="utf-8" />
                     <title>Faqs Page</title> 
                 </Helmet> 
-                {getData && <p>{`User One name is ${getData.data.first_name} ${getData.data.last_name}`}</p>}  
-                {getDataTwo && <p>{`User Two name is ${getDataTwo.data.first_name} ${getDataTwo.data.last_name}`}</p>} 
+				<div className="container">
+                {getData && <p>{`API Call 1: User One name is ${getData.data.first_name} ${getData.data.last_name}`}</p>}  
+                {getDataTwo && <p>{`API Call 2: User Two name is ${getDataTwo.data.first_name} ${getDataTwo.data.last_name}`}</p>} 
+				</div>
         </div>
       )
 }
