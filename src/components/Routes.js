@@ -12,7 +12,7 @@ function Routes() {
     return (
         <>
             <Switch>
-            <Route exact path="/">
+            <Route exact path="/reactjs">
                 <Home />
             </Route>
             <Route exact path="/about-us">
