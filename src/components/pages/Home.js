@@ -6,8 +6,8 @@ function Home() {
     const [{ data: items, loading, error }] = useAxios(
         'https://jsonplaceholder.typicode.com/posts'
       );
-      if (loading) return <p>Loading...</p>
-      if (error) return <p>Error!</p> 
+      if (loading) return <div className="container">Loading...</div>
+      if (error) return <div className="container">Error!</div> 
 
     return (
         <>
